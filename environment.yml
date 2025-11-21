@@ -1,0 +1,79 @@
+name: reactaivate_final
+channels:
+  - pytorch
+  - rdkit
+  - defaults
+dependencies:
+  # Conda-managed core dependencies (Using Python 3.10 for modern compatibility)
+  - python=3.10
+  - numpy>=1.22
+  - pytorch>=2.0
+  - rdkit>=2023.09 # Ensure a recent, Python 3.10+ compatible RDKit
+  - matplotlib
+  - pandas
+  - scipy
+  - ipython
+  - jupyter
+  - requests
+  - tqdm
+  - pip
+
+  # Pip-managed dependencies (Your exact versions for FastAPI and Transformers)
+  - pip:
+      - fastapi==0.115.4
+      - uvicorn==0.32.0
+      - starlette==0.41.3
+      - transformers==4.46.2
+      - huggingface-hub==0.36.0
+      - safetensors==0.6.2
+      - tokenizers==0.20.3
+      - sentencepiece==0.2.0
+      - dgllife # DGL-Life for your model
+      - scikit-learn
+
+      # All remaining packages from your original list (keep the explicit pins)
+      - aiofiles==24.1.0
+      - annotated-types==0.7.0
+      - anyio==4.11.0
+      - bcrypt==5.0.0
+      - certifi==2025.10.5
+      - charset-normalizer==3.4.4
+      - click==8.3.0
+      - colorama==0.4.6
+      - filelock==3.20.0
+      - fsspec==2025.10.0
+      - h11==0.16.0
+      - httpcore==1.0.9
+      - httptools==0.7.1
+      - httpx==0.27.2
+      - idna==3.11
+      - iniconfig==2.3.0
+      - Jinja2==3.1.6
+      - loguru==0.7.3
+      - markdown-it-py==4.0.0
+      - MarkupSafe==3.0.3
+      - mdurl==0.1.2
+      - mpmath==1.3.0
+      - networkx
+      - packaging==25.0
+      - passlib==1.7.4
+      - pillow==12.0.0
+      - pluggy==1.6.0
+      - protobuf==5.28.3
+      - pydantic==2.9.2
+      - pydantic-settings==2.3.4
+      - pydantic_core==2.23.4
+      - Pygments==2.19.2
+      - pytest==8.3.3
+      - python-dotenv==1.0.1
+      - python-multipart==0.0.9
+      - PyYAML==6.0.3
+      - regex==2025.10.23
+      - rich==13.9.2
+      - sniffio==1.3.1
+      - sympy==1.14.0
+      - typing_extensions==4.15.0
+      - urllib3==2.5.0
+      - watchfiles==1.1.1
+      - websockets==15.0.1
+      - win32_setctime==1.2.0
